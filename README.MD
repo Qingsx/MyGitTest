@@ -1,6 +1,2 @@
-this is my first repository.
-
-FOR FUN ! FOR FREEDOM !!
-
-version 1.0
-
+this is branch 01 .
+this is version 2.0
