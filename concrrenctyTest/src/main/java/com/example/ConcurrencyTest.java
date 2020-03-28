@@ -21,7 +21,7 @@ public class ConcurrencyTest {
 
     private static long time(Executor executors, int concurrency, final Runnable action) throws InterruptedException {
         final CountDownLatch ready = new CountDownLatch(concurrency);
-        final CountDownLatch start = new CountDownLatch(1);
+        final CountDownLatch start = new CountDownLatch(1); //如何设定为concurrency,那么一旦await,当countDown=conCurrency,才会继续执行
         final CountDownLatch done = new CountDownLatch(concurrency);
 
         for (int i = 0; i < concurrency; i++) {
